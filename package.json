@@ -17,7 +17,9 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@ember-decorators/babel-transforms": "^2.0.1",
     "axios": "^0.18.0",
+    "babel-eslint": "^8.2.5",
     "broccoli-asset-rev": "^2.7.0",
     "ember-angle-bracket-invocation-polyfill": "^1.1.5",
     "ember-auto-import": "^1.0.0",

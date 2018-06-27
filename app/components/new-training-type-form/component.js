@@ -12,11 +12,13 @@ export default class NewTrainingTypeForm extends Component {
   }
 
   @action
-  async save() {
+  async save(ev) {
+    ev.preventDefault();
+
     let formValues = this.formValues;
 
     let request = await Axios.post('http://dog-tracker.test/training-types', formValues);
 
-    debugger;
+    let trainingType = request.data;
   }
 }
