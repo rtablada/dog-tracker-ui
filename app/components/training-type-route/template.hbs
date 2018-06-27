@@ -1,0 +1,7 @@
+<TrainingTypeList @trainingTypes={{redux.state.trainingTypes}} />
+
+{{#if showingNewForm}}
+  <NewTrainingTypeForm @onsubmit={{action "saveNew"}} />
+{{else}}
+  <button onclick={{action (mut showingNewForm) true}}>Create New</button>
+{{/if}}

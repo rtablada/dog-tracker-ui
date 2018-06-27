@@ -1,5 +1,4 @@
 import Component from "@ember/component";
-import Axios from "axios";
 import { action } from '@ember-decorators/object';
 
 export default class NewTrainingTypeForm extends Component {
@@ -17,8 +16,6 @@ export default class NewTrainingTypeForm extends Component {
 
     let formValues = this.formValues;
 
-    let request = await Axios.post('http://dog-tracker.test/training-types', formValues);
-
-    let trainingType = request.data;
+    this.onsubmit(formValues);
   }
 }
